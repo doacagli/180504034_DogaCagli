@@ -1,8 +1,8 @@
 package com.company;
 
 public class Empfangsdame extends Benutzer{
-    public String listKlient(String Vorname, String Nachname){
+    public String listKlient(String vorname, String nachname){
 
-        return Vorname + Nachname;
+        return vorname + nachname;
     }
 }

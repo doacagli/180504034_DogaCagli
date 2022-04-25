@@ -3,67 +3,67 @@ package com.company;
 import java.util.zip.Adler32;
 
 public class Person {
-    private String Vorname;
-    private String Nachname;
-    private String BurgerID;
-    private String Adresse;
-    private String Geburtsdatum;
-    private String Telefonnummer;
-    private String Geschlecht;
+    private String vorname;
+    private String nachname;
+    private String burgerID;
+    private String adresse;
+    private String geburtsdatum;
+    private String telefonnummer;
+    private String geschlecht;
 
     public String getGeschlecht() {
-        return Geschlecht;
+        return geschlecht;
     }
 
     public void setGeschlecht(String geschlecht) {
-        Geschlecht = geschlecht;
+        this.geschlecht = geschlecht;
     }
 
     public String getTelefonnummer() {
-        return Telefonnummer;
+        return telefonnummer;
     }
 
     public void setTelefonnummer(String telefonnummer) {
-        Telefonnummer = telefonnummer;
+        this.telefonnummer = telefonnummer;
     }
 
     public String getVorname() {
-        return Vorname;
+        return vorname;
     }
 
     public void setVorname(String vorname) {
-        Vorname = vorname;
+        this.vorname = vorname;
     }
 
     public String getNachname() {
-        return Nachname;
+        return nachname;
     }
 
     public void setNachname(String nachname) {
-        Nachname = nachname;
+        this.nachname = nachname;
     }
 
     public String getBurgerID() {
-        return BurgerID;
+        return burgerID;
     }
 
     public void setBurgerID(String burgerID) {
-        BurgerID = burgerID;
+        this.burgerID = burgerID;
     }
 
     public String getAdresse() {
-        return Adresse;
+        return adresse;
     }
 
     public void setAdresse(String adresse) {
-        Adresse = adresse;
+        this.adresse = adresse;
     }
 
     public String getGeburtsdatum() {
-        return Geburtsdatum;
+        return geburtsdatum;
     }
 
     public void setGeburtsdatum(String geburtsdatum) {
-        Geburtsdatum = geburtsdatum;
+        this.geburtsdatum = geburtsdatum;
     }
 }

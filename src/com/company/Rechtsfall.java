@@ -1,31 +1,31 @@
 package com.company;
 
 public class Rechtsfall {
-    private String Anwalt;
-    private String RechtsfallArten;
-    private String DateinNummer;
+    private String anwalt;
+    private String rechtsfallArten;
+    private String dateinNummer;
 
     public String getAnwalt() {
-        return Anwalt;
+        return anwalt;
     }
 
     public void setAnwalt(String anwalt) {
-        Anwalt = anwalt;
+        this.anwalt = anwalt;
     }
 
     public String getRechtsfallArten() {
-        return RechtsfallArten;
+        return rechtsfallArten;
     }
 
     public void setRechtsfallArten(String rechtsfallArten) {
-        RechtsfallArten = rechtsfallArten;
+        this.rechtsfallArten = rechtsfallArten;
     }
 
     public String getDateinNummer() {
-        return DateinNummer;
+        return dateinNummer;
     }
 
     public void setDateinNummer(String dateinNummer) {
-        DateinNummer = dateinNummer;
+        this.dateinNummer = dateinNummer;
     }
 }

@@ -1,42 +1,42 @@
 package com.company;
 
 public class Klient extends Person{
-    private String Geschlecht;
-    private String Beruf;
-    private String EheStatus;
-    private String TerminDatum;
-    private String Rechtsfall;
+    private String geschlecht;
+    private String beruf;
+    private String eheStatus;
+    private String terminDatum;
+    private String rechtsfall;
 
     public String getGeschlecht() {
-        return Geschlecht;
+        return geschlecht;
     }
 
     public void setGeschlecht(String geschlecht) {
-        Geschlecht = geschlecht;
+        this.geschlecht = geschlecht;
     }
 
     public String getBeruf() {
-        return Beruf;
+        return beruf;
     }
 
     public void setBeruf(String beruf) {
-        Beruf = beruf;
+        this.beruf = beruf;
     }
 
     public String getEheStatus() {
-        return EheStatus;
+        return eheStatus;
     }
 
     public void setEheStatus(String eheStatus) {
-        EheStatus = eheStatus;
+        this.eheStatus = eheStatus;
     }
 
     public String getTerminDatum() {
-        return TerminDatum;
+        return terminDatum;
     }
 
     public void setTerminDatum(String terminDatum) {
-        TerminDatum = terminDatum;
+        this.terminDatum = terminDatum;
     }
 
 }

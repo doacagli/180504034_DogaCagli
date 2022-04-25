@@ -1,13 +1,13 @@
 package com.company;
 
 public class Fallsbetreffende extends Person{
-    private String Interesse;
+    private String interesse;
 
     public String getInteresse() {
-        return Interesse;
+        return interesse;
     }
 
     public void setInteresse(String interesse) {
-        Interesse = interesse;
+        this.interesse = interesse;
     }
 }

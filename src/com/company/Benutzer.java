@@ -3,40 +3,40 @@ package com.company;
 import java.net.PasswordAuthentication;
 
 public class Benutzer extends Person{
-    private String PersonalID;
-    private String Password;
-    private String Arbeitsstelle;
-    private String Arbeitsanfangsdatum;
+    private String personalID;
+    private String password;
+    private String arbeitsstelle;
+    private String arbeitsanfangsdatum;
 
     public String getPersonalID() {
-        return PersonalID;
+        return personalID;
     }
 
     public void setPersonalID(String personalID) {
-        PersonalID = personalID;
+        this.personalID = personalID;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 
     public String getArbeitsstelle() {
-        return Arbeitsstelle;
+        return arbeitsstelle;
     }
 
     public void setArbeitsstelle(String arbeitsstelle) {
-        Arbeitsstelle = arbeitsstelle;
+        this.arbeitsstelle = arbeitsstelle;
     }
 
     public String getArbeitsanfangsdatum() {
-        return Arbeitsanfangsdatum;
+        return arbeitsanfangsdatum;
     }
 
     public void setArbeitsanfangsdatum(String arbeitsanfangsdatum) {
-        Arbeitsanfangsdatum = arbeitsanfangsdatum;
+        this.arbeitsanfangsdatum = arbeitsanfangsdatum;
     }
 }
