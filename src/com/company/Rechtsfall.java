@@ -8,11 +8,9 @@ public class Rechtsfall {
     public String getAnwalt() {
         return anwalt;
     }
-
     public void setAnwalt(String anwalt) {
         this.anwalt = anwalt;
     }
-
     public String getRechtsfallArten() {
         return rechtsfallArten;
     }

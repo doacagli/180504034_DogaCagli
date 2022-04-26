@@ -11,23 +11,18 @@ public class Benutzer extends Person{
     public String getPersonalID() {
         return personalID;
     }
-
     public void setPersonalID(String personalID) {
         this.personalID = personalID;
     }
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
-
     public String getArbeitsstelle() {
         return arbeitsstelle;
     }
-
     public void setArbeitsstelle(String arbeitsstelle) {
         this.arbeitsstelle = arbeitsstelle;
     }
