@@ -1,29 +1,41 @@
 package com.company;
 
 public class Rechtsfall {
-    private String anwalt;
-    private String rechtsfallArten;
-    private String dateinNummer;
+    private String Anwalt;
+    private String RechtsfallArten;
+    private String DateinNummer;
+
+    public Rechtsfall(String anwalt, String rechtsfallArten, String dateinNummer) {
+        Anwalt = anwalt;
+        RechtsfallArten = rechtsfallArten;
+        DateinNummer = dateinNummer;
+    }
 
     public String getAnwalt() {
-        return anwalt;
+        return Anwalt;
     }
+
     public void setAnwalt(String anwalt) {
-        this.anwalt = anwalt;
+        Anwalt = anwalt;
     }
+
     public String getRechtsfallArten() {
-        return rechtsfallArten;
+        return RechtsfallArten;
     }
 
     public void setRechtsfallArten(String rechtsfallArten) {
-        this.rechtsfallArten = rechtsfallArten;
+        RechtsfallArten = rechtsfallArten;
     }
 
     public String getDateinNummer() {
-        return dateinNummer;
+        return DateinNummer;
     }
 
     public void setDateinNummer(String dateinNummer) {
-        this.dateinNummer = dateinNummer;
+        DateinNummer = dateinNummer;
+    }
+    @Override
+    public String toString(){
+        return Anwalt+" "+RechtsfallArten+" "+DateinNummer;
     }
 }

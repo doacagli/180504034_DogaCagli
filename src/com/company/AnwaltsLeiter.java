@@ -1,12 +1,31 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class AnwaltsLeiter extends Benutzer {
-    private void updateKundenInfo(String Vorname, String Nachname, String Beruf, String TerminDatum, String Geschlecht, String EheStatus, String Telefonnummer, String Adresse, String Geburtsdatum) {
+    public AnwaltsLeiter(String vorname, String nachname, String BurgerId, String adresse, Date geburtsdatum, int telefonnummer, String geschlecht, String mailAdresse, String personalID, String pswort, String bname, String aStelle) {
+        super(vorname, nachname, BurgerId, adresse, geburtsdatum, telefonnummer, geschlecht, mailAdresse, personalID, pswort, bname, aStelle);
     }
-    private void deleteKundenInfo(String Vorname, String Nachname, String EheStatus, String Beruf, String TerminDatum, String Geschlecht, String Telefonnummer, String Adresse, String Geburtsdatum) {
+    private ArrayList<Klient> Klient;
+    private ArrayList<Rechtsfall> Rechtsfall;
+
+    public void addKlient(Klient k){
+        Klient.add(k);
     }
-    private void printKunde(String Vorname, String Nachname, String EheStatus, String Beruf, String TerminDatum, String Geschlecht, String Telefonnummer, String Adresse, String Geburtsdatum) {
+    public void delKlient(Klient k){
+        Klient.remove(k);
     }
-    private void setKunde(String Vorname, String Nachname, String EheStatus, String Beruf, String TerminDatum, String Geschlecht, String Telefonnummer, String Adresse, String Geburtsdatum) {
+    public void addRechtsfall(Rechtsfall r){
+        Rechtsfall.add(r);
     }
+    public void delRechtsfall(Rechtsfall r){
+        Rechtsfall.remove(r);
+    }
+
+    @Override
+    public String toString(){
+        return super.toString();
+    }
+
 }

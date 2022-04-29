@@ -1,69 +1,109 @@
 package com.company;
 
 import java.util.zip.Adler32;
+import java.util.Date;
+
 
 public class Person {
-    private String vorname;
-    private String nachname;
-    private String burgerID;
-    private String adresse;
-    private String geburtsdatum;
-    private String telefonnummer;
-    private String geschlecht;
+    private String Vorname;
+    private String Nachname;
+    private String BurgerID;
+    private String Adresse;
+    private Date Geburtsdatum;
+    private int Telefonnummer;
+    private String Geschlecht;
+    private String MailAdresse;
 
-    public String getGeschlecht() {
-        return geschlecht;
-    }
-
-    public void setGeschlecht(String geschlecht) {
-        this.geschlecht = geschlecht;
-    }
-
-    public String getTelefonnummer() {
-        return telefonnummer;
-    }
-
-    public void setTelefonnummer(String telefonnummer) {
-        this.telefonnummer = telefonnummer;
+    public Person(String Id){
+        this.BurgerID =Id;
     }
 
     public String getVorname() {
-        return vorname;
+        return Vorname;
     }
 
     public void setVorname(String vorname) {
-        this.vorname = vorname;
+        Vorname = vorname;
     }
 
     public String getNachname() {
-        return nachname;
+        return Nachname;
     }
 
     public void setNachname(String nachname) {
-        this.nachname = nachname;
+        Nachname = nachname;
     }
 
     public String getBurgerID() {
-        return burgerID;
+        return BurgerID;
     }
 
     public void setBurgerID(String burgerID) {
-        this.burgerID = burgerID;
+        BurgerID = burgerID;
     }
 
     public String getAdresse() {
-        return adresse;
+        return Adresse;
     }
 
     public void setAdresse(String adresse) {
-        this.adresse = adresse;
+        Adresse = adresse;
     }
 
-    public String getGeburtsdatum() {
-        return geburtsdatum;
+    public Date getGeburtsdatum() {
+        return Geburtsdatum;
     }
 
-    public void setGeburtsdatum(String geburtsdatum) {
-        this.geburtsdatum = geburtsdatum;
+    public void setGeburtsdatum(Date geburtsdatum) {
+        Geburtsdatum = geburtsdatum;
     }
+
+    public int getTelefonnummer() {
+        return Telefonnummer;
+    }
+
+    public void setTelefonnummer(int telefonnummer) {
+        Telefonnummer = telefonnummer;
+    }
+
+    public String getGeschlecht() {
+        return Geschlecht;
+    }
+
+    public void setGeschlecht(String geschlecht) {
+        Geschlecht = geschlecht;
+    }
+
+    public String getMailAdresse() {
+        return MailAdresse;
+    }
+
+    public void setMailAdresse(String mailAdresse) {
+        MailAdresse = mailAdresse;
+    }
+
+    public Person(String vorname, String nachname,String BurgerId, String adresse, Date geburtsdatum, int telefonnummer, String geschlecht, String mailAdresse){
+        Vorname=vorname;
+        Nachname=nachname;
+        this.BurgerID=BurgerId;
+        Adresse=adresse;
+        Geburtsdatum=geburtsdatum;
+        Telefonnummer=telefonnummer;
+        Geschlecht=geschlecht;
+        MailAdresse=mailAdresse;
+
+    }
+    @Override
+    public String toString(){
+        return Vorname + " " + Nachname+" "+BurgerID+" "+Adresse+" "+Geburtsdatum+" "+Telefonnummer+" "+Geschlecht+" "+MailAdresse;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        Person a =(Person) o;
+        if(a.getBurgerID().equals(this.BurgerID)) return true;
+        else return false;
+    }
+
+
 }

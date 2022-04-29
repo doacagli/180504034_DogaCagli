@@ -1,18 +1,20 @@
 package com.company;
 
+import java.util.Date;
+import java.util.List;
+
 public class Klient extends Person{
-    private String geschlecht;
     private String beruf;
     private String eheStatus;
-    private String terminDatum;
-    private String rechtsfall;
+    private Date terminDatum;
+    private List<Rechtsfall> Rechtsfall;
 
-    public String getGeschlecht() {
-        return geschlecht;
-    }
-
-    public void setGeschlecht(String geschlecht) {
-        this.geschlecht = geschlecht;
+    public Klient(String vorname, String nachname, String BurgerId, String adresse, Date geburtsdatum, int telefonnummer, String geschlecht, String mailAdresse, String beruf, String eheStatus, Date terminDatum, List<Rechtsfall> rechtsfall) {
+        super(vorname, nachname, BurgerId, adresse, geburtsdatum, telefonnummer, geschlecht, mailAdresse);
+        this.beruf=beruf;
+        this.eheStatus=eheStatus;
+        this.terminDatum=terminDatum;
+        Rechtsfall=rechtsfall;
     }
 
     public String getBeruf() {
@@ -31,12 +33,23 @@ public class Klient extends Person{
         this.eheStatus = eheStatus;
     }
 
-    public String getTerminDatum() {
+    public Date getTerminDatum() {
         return terminDatum;
     }
 
-    public void setTerminDatum(String terminDatum) {
+    public void setTerminDatum(Date terminDatum) {
         this.terminDatum = terminDatum;
     }
 
+    public List<com.company.Rechtsfall> getRechtsfall() {
+        return Rechtsfall;
+    }
+
+    public void setRechtsfall(List<com.company.Rechtsfall> rechtsfall) {
+        Rechtsfall = rechtsfall;
+    }
+     @Override
+    public String toString(){
+        return super.toString()+" "+beruf+" "+eheStatus+" "+Rechtsfall+" "+terminDatum;
+     }
 }
