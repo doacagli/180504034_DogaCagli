@@ -9,6 +9,7 @@ public class AnwaltsLeiter extends Benutzer {
     }
     private ArrayList<Klient> Klient;
     private ArrayList<Rechtsfall> Rechtsfall;
+    private ArrayList<Termin> Termin;
 
     public void addKlient(Klient k){
         Klient.add(k);
@@ -21,6 +22,12 @@ public class AnwaltsLeiter extends Benutzer {
     }
     public void delRechtsfall(Rechtsfall r){
         Rechtsfall.remove(r);
+    }
+    public void addTermin(Termin t){
+        Termin.add(t);
+    }
+    public void delTermin(Termin t){
+        Termin.remove(t);
     }
 
     @Override

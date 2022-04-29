@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Anwalt extends Benutzer{
@@ -7,9 +8,23 @@ public class Anwalt extends Benutzer{
         super(vorname, nachname, BurgerId, adresse, geburtsdatum, telefonnummer, geschlecht, mailAdresse, personalID, pswort, bname, aStelle);
     }
 
-    private void updateKundenInfo(String Vorname, String Nachname, String EheStatus, String Beruf, String TerminDatum, String Geschlecht, String Telefonnummer, String Adresse, String Geburtsdatum) {
+    private ArrayList<Klient> Klient;
+    private ArrayList<Rechtsfall> Rechtsfall;
+
+    public void addKlient(Klient k){
+        Klient.add(k);
     }
-    private void setTermin(String BurgerID, String TerminDatum){
+    public void delKlient(Klient k){
+        Klient.remove(k);
+    }
+    public void addRechtsfall(Rechtsfall r){
+        Rechtsfall.add(r);
+    }
+    public void delRechtsfall(Rechtsfall r) {
+        Rechtsfall.remove(r);
+    }
+    public void listRechtsfall(Rechtsfall r){ // void yanliş return ne verebilir ?
+        Rechtsfall.listIterator();
     }
 
 }
